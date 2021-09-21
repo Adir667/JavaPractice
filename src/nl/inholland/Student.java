@@ -1,18 +1,16 @@
 package nl.inholland;
 
-public class Student {
-    String name;
-    int age;
+public class Student extends Person {
+    String group;
 
-
-    public Student (String name, int age) {
-        this.name = name;
-        this.age = age;
+    public Student (String fullName, String email, String group) {
+        super(fullName, email);
+        this.group = group;
     }
 
-    void printInformation() {
-        System.out.println("Name: "+this.name);
-        System.out.println("Age: "+this.age);
-        }
-
+    @Override
+    void printDeails() {
+        super.printDeails();
+        System.out.println("Group:" +this.group);
+    }
 }
