@@ -33,7 +33,7 @@ public class Main {
         }
 
         for (int i = 0; i <nrOfStudents ; i++) {
-            System.out.println("Student #" + (i+1) + ": (" +group[i].getName() + ") | Present: " + group[i].isPresence());
+            System.out.println("Student #" + (i+1) + ": (" +group[i].getName() + ") \t\t\t| Present: " + group[i].isPresence());
         }
     }
 }
